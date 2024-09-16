@@ -1,0 +1,107 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #c6ffdd, #fbd786, #f7797d);
+}
+
+.container {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 800px;
+}
+
+/* Left side - Instructions */
+.auth-section {
+  background-color: #00796b;
+  padding: 30px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.auth-section h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.auth-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.auth-buttons, .difficulty-section {
+  margin-top: 20px;
+}
+
+.auth-buttons button, .difficulty-buttons button {
+  background-color: #004d40;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  margin: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover, .difficulty-buttons button:hover {
+  background-color: #00332e;
+}
+
+/* Right side - Game */
+.game-section {
+  padding: 30px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.game-section h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  width: 300px;
+  height: 300px;
+  margin: 20px 0;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #e0f2f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+  color: #004d40;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #b2dfdb;
+  transform: scale(1.05);
+}
